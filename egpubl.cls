@@ -830,19 +830,19 @@ Categories and Subject Descriptors {\small (according to ACM CCS)}: }
 %% DF (the volumes volume can be computed as year-1981)
 %
 \gdef\j@year{1981}
-\gdef\j@volume{0}
+%\gdef\j@volume{0}
 \gdef\j@issue{0}
 %
-\newcounter{p@volume}
+%\newcounter{p@volume}
 % \setcounter{p@volume}{\number\year} % compute volume based on current year
 % \addtocounter{p@volume}{-1981}%
 %
-\newcommand\volume[1]{%
- \gdef\j@volume{#1}%
- \setcounter{p@volume}{#1}%     compute year for the given volume
- \addtocounter{p@volume}{1981}%
- \gdef\j@year{\thep@volume}%
-}
+%\newcommand\volume[1]{%
+ %\gdef\j@volume{#1}%
+ %\setcounter{p@volume}{#1}%     compute year for the given volume
+% \addtocounter{p@volume}{1981}%
+ %\gdef\j@year{\thep@volume}%
+%}
 %
 \newcommand\issue[1]{\gdef\j@issue{#1}}
 %
@@ -1009,7 +1009,7 @@ submitted to \textit{#1}%
      EUROGRAPHICS \p@EGyear{} / \p@ConfEditors{}\\
      \p@ConfEditorStrg}% (Guest Editors)}
    \hfill
-   \textit{Volume \j@volume} (\textit{\p@ConfYear\/}),
+   %\textit{Volume \j@volume} (\textit{\p@ConfYear\/}),
    \textit{Number \j@issue}}%
  }%
 }
@@ -1033,7 +1033,7 @@ submitted to \textit{#1}%
      \p@ConfEditors{}\\
      \p@ConfEditorStrg}% (Guest Editors)}
    \hfill
-   \textit{Volume \j@volume} (\textit{\p@ConfYear\/}),
+   %\textit{Volume \j@volume} (\textit{\p@ConfYear\/}),
    \textit{Number \j@issue}}%
  }%
 }
@@ -1062,7 +1062,7 @@ submitted to \textit{#1}%
      \p@ConfEditorStrg}% (Guest Editors)}
    \hfill
 %   \textit{Volume \j@volume} (\textit{\p@ConfYear\/}),
-   \textit{Volume \j@volume} (\textit{\j@year\/}),
+  % \textit{Volume \j@volume} (\textit{\j@year\/}),
    \textit{Number \j@issue}}%
  }%
 }
@@ -1091,7 +1091,7 @@ submitted to \textit{#1}%
      \p@ConfEditorStrg}% (Guest Editors)}
    \hfill
 %   \textit{Volume \j@volume} (\textit{\p@ConfYear\/}),
-   \textit{Volume \j@volume} (\textit{\j@year\/}),
+  % \textit{Volume \j@volume} (\textit{\j@year\/}),
    \textit{Number \j@issue}}%
  }%
 }
@@ -1121,7 +1121,7 @@ submitted to \textit{#1}%
      \p@ConfEditorStrg}% (Guest Editors)}
    \hfill
 %   \textit{Volume \j@volume} (\textit{\p@ConfYear\/}),
-   \textit{Volume \j@volume} (\textit{\j@year\/}),
+%   \textit{Volume \j@volume} (\textit{\j@year\/}),
    \textit{Number \j@issue}}%
  }%
 }
@@ -1142,7 +1142,7 @@ submitted to \textit{#1}%
 \def\ps@titlepage{\let\@mkboth\@gobbletwo
  \def\@oddhead{\raisebox{\z@}[8pt][1pt]{\parbox{\textwidth}{\small
 %    \textit{Volume \j@volume} (\textit{\number\year}\/),
-   \textit{Volume xx} (\textit{200y}\/),         % Vol + year yet unknown !
+%   \textit{Volume xx} (\textit{200y}\/),         % Vol + year yet unknown !
    \textit{Number z, \ pp.\ \j@pStartPage--\j@pEndPage}%
    \hfill
  }}}%
@@ -1168,7 +1168,7 @@ submitted to \textit{#1}%
 \def\ps@titlepage{\let\@mkboth\@gobbletwo
  \def\@oddhead{\raisebox{\z@}[8pt][1pt]{\parbox{\textwidth}{\small
 %   \textit{Volume \j@volume} (\textit{\number\year}\/),
-   \textit{Volume \j@volume} (\textit{\j@year}\/),
+%   \textit{Volume \j@volume} (\textit{\j@year}\/),
    \textit{Number \j@issue\ pp.\ \j@pStartPage--\j@pEndPage}%
    \hfill \@journal
  }}}%
@@ -1259,7 +1259,7 @@ submitted to \textit{#1}%
      \p@ConfEditorStrg}% (Guest Editors)}
    \hfill
    \parbox[t]{.5\textwidth}{\sloppy\raggedleft
-   \textit{Volume \j@volume} (\textit{\p@ConfYear\/}),
+ %  \textit{Volume \j@volume} (\textit{\p@ConfYear\/}),
    \textit{Number \j@issue}\\
    {\itshape STAR -- State of The Art Report}}}
  }%
@@ -1290,7 +1290,7 @@ submitted to \textit{#1}%
      \p@ConfEditorStrg}% (Guest Editors)}
    \hfill
    \parbox[t]{.5\textwidth}{\sloppy\raggedleft
-   \textit{Volume \j@volume} (\textit{\p@ConfYear\/}),
+ %  \textit{Volume \j@volume} (\textit{\p@ConfYear\/}),
    \textit{Number \j@issue}\\
    {\itshape STAR -- State of The Art Report}}}
  }%
@@ -1383,7 +1383,7 @@ submitted to \textit{#1}%
 	\p@ConfEditorStrg}% (Guest Editors)}
     \hfill
     \parbox[t]{.5\textwidth}{\sloppy\raggedleft
-    \textit{Volume \j@volume} (\textit{\p@ConfYear\/}),
+   % \textit{Volume \j@volume} (\textit{\p@ConfYear\/}),
     \textit{Number \j@issue}\\
     {\itshape Poster}}}
   }%
@@ -1478,7 +1478,7 @@ submitted to \textit{#1}%
 	\p@ConfEditorStrg}% (Guest Editors)}
     \hfill
     \parbox[t]{.5\textwidth}{\sloppy\raggedleft
-   \textit{Volume \j@volume} (\textit{\p@ConfYear\/}),
+ %  \textit{Volume \j@volume} (\textit{\p@ConfYear\/}),
    \textit{Number \j@issue}\\
    {\itshape Short Paper}}}
  }%
