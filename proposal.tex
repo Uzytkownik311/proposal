@@ -1,57 +1,48 @@
-% ---------------------------------------------------------------------------
-% Author guideline and sample document for EG publication using LaTeX2e input
-% D.Fellner, v1.13, Jul 31, 2008
+\documentclass[fleqn,10pt]{wlscirep}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\title{\center Task-Oriented Guidance for Information Visualization Recommendation					\vskip10pt
+		\large 188.943 - Project in Visual Computing\\
+			Praktikum\\}
+\author[1]{Marcin Konefał, BSc}
+\author[2]{\\Supervision: Dipl.-Ing. Dr. Harald Piringer}
+\author[3]{\\Assistance: Univ.-Prof. Mag. Dr. Silvia Miksch}
 
-\documentclass{egpubl}
-%\usepackage{eurovis2018}
-%\Short_EuroVis
-% --- for  Annual CONFERENCE
-% \ConferenceSubmission   % uncomment for Conference submission
-% \ConferencePaper        % uncomment for (final) Conference Paper
-%\STAR                   % uncomment for STAR contribution
-% \Tutorial               % uncomment for Tutorial contribution
-%\ShortPresentation      % uncomment for (final) Short Conference Presentation
-% \Areas                  % uncomment for Areas contribution
-% \MedicalPrize           % uncomment for Medical Prize contribution
-% \Education              % uncomment for Education contribution
-%
-% --- for  CGF Journal
-% \JournalSubmission    % uncomment for submission to Computer Graphics Forum
-% \JournalPaper         % uncomment for final version of Journal Paper
-%
-% --- for  CGF Journal: special issue
-% \SpecialIssueSubmission    % uncomment for submission to Computer Graphics Forum, special issue
-% \SpecialIssuePaper         % uncomment for final version of Journal Paper, special issue
-%
-% --- for  EG Workshop Proceedings
-% \WsSubmission    % uncomment for submission to EG Workshop
-% \WsPaper         % uncomment for final version of EG Workshop contribution
-%
-%\electronicVersion % can be used both for the printed and electronic version
+\affil[1]{Matricual number: 11834279, TU Wien, Austria}
+\affil[2]{VRVis Zentrum für Virtual Reality und Visualisierung Forschungs-GmbH, Austria}
+\affil[3]{Institute of Visual Computing and Human-Centered Technology, TU Wien, Austria}
 
-% !! *please* don't change anything above
-% !! unless you REALLY know what you are doing
-% ------------------------------------------------------------------------
+\begin{document}
 
-% for including postscript figures
-% mind: package option 'draft' will replace PS figure by a filname within a frame
-\ifpdf \usepackage[pdftex]{graphicx} \pdfcompresslevel=9
-\else \usepackage[dvips]{graphicx} \fi
+\flushbottom
+\maketitle
 
-%\PrintedOrElectronic
+\section{Introduction}
 
-% prepare for electronic version of your document
-\usepackage{t1enc,dfadobe}
 
-\usepackage{egweblnk}
-\usepackage{cite}
+%-------------------------------------------------------------------------
+\section{Problem Description}
 
-% For backwards compatibility to old LaTeX type font selection.
-% Uncomment if your document adheres to LaTeX2e recommendations.
-% \let\rm=\rmfamily    \let\sf=\sffamily    \let\tt=\ttfamily
-% \let\it=\itshape     \let\sl=\slshape     \let\sc=\scshape
-% \let\bf=\bfseries
 
-% end of prologue
+%-------------------------------------------------------------------------
+\section{Expected Results}
 
-\input{EGauthorGuidelines-body.inc}
+
+%-------------------------------------------------------------------------
+\section{Method}
+
+
+%-------------------------------------------------------------------------
+\section{References}
+
+
+%-------------------------------------------------------------------------
+
+%\bibliographystyle{eg-alpha}
+\bibliographystyle{eg-alpha-doi}
+
+\bibliography{egbibsample}
+
+%-------------------------------------------------------------------------
+
+\end{document}
